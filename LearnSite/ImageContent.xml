@@ -1,0 +1,32 @@
+<Content>
+    <box1>
+        <name>Majuli Assam</name>
+        <description>1Mājuli or Majoli is a river island in the Brahmaputra River, Assam and in 2016 it became the first island to be made a district in India.Mājuli is 20 km from Jorhat. The culture here is an one of a kind to be experienced. One can take the bus or a hired taxi to the Nimati Steamer Ghat from where ferry services ply. The distance takes over three hours to cover, with three bus rides and two ferry rides.
+        </description>
+        <link>./Pictures/Locations/Majuli-Assam.jpg</link>
+    </box1>
+    <box2>
+        <name>Key Monastery, Spiti</name>
+        <description>2Mājuli or Majoli is a river island in the Brahmaputra River, Assam and in 2016 it became the first island to be made a district in India.Mājuli is 20 km from Jorhat. The culture here is an one of a kind to be experienced. One can take the bus or a hired taxi to the Nimati Steamer Ghat from where ferry services ply. The distance takes over three hours to cover, with three bus rides and two ferry rides.
+        </description>
+        <link>./Pictures/Locations/Key-Monastery-Spiti.jpg</link>
+    </box2>
+    <box3>
+        <name>Hampi, Karnataka</name>
+        <description>3Mājuli or Majoli is a river island in the Brahmaputra River, Assam and in 2016 it became the first island to be made a district in India.Mājuli is 20 km from Jorhat. The culture here is an one of a kind to be experienced. One can take the bus or a hired taxi to the Nimati Steamer Ghat from where ferry services ply. The distance takes over three hours to cover, with three bus rides and two ferry rides.
+        </description>
+        <link>./Pictures/Locations/Hampi-Karnataka.jpg</link>
+    </box3>
+    <box4>
+        <name>Nohkalikai Waterfalls, Cheerapunj</name>
+        <description>4Mājuli or Majoli is a river island in the Brahmaputra River, Assam and in 2016 it became the first island to be made a district in India.Mājuli is 20 km from Jorhat. The culture here is an one of a kind to be experienced. One can take the bus or a hired taxi to the Nimati Steamer Ghat from where ferry services ply. The distance takes over three hours to cover, with three bus rides and two ferry rides.
+        </description>
+        <link>./Pictures/Locations/Nohkalikai-Waterfalls-Cherrapunjee.jpg</link>
+    </box4>
+    <box5>
+        <name>Pangong Lake, Ladakh</name>
+        <description>5Mājuli or Majoli is a river island in the Brahmaputra River, Assam and in 2016 it became the first island to be made a district in India.Mājuli is 20 km from Jorhat. The culture here is an one of a kind to be experienced. One can take the bus or a hired taxi to the Nimati Steamer Ghat from where ferry services ply. The distance takes over three hours to cover, with three bus rides and two ferry rides.
+        </description>
+        <link>./Pictures/Locations/Pangong-Lake-Ladakh.jpg</link>
+    </box5>
+</Content>

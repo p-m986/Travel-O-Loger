@@ -1,0 +1,246 @@
+body{
+  margin: 0;
+  padding:0;
+}
+.section-1 {
+  background-color: rgba(35, 114, 110, 0.2);
+  padding:6vh;
+  color:white;
+  animation: animate1 6s infinite;
+}
+.top{
+  margin: 0;
+  height: 2.5vh;
+  width: 0vw;
+  position: absolute;
+  /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
+  animation: animate2 10s infinite;
+  z-index: 3;
+  /* border:1px solid black; */
+}
+@keyframes animate2 { 
+  0% { 
+    background: linear-gradient(200deg, #4fff03, #03a9f4);
+    width: 0vw;
+  }   
+  50% { 
+    background: linear-gradient(200deg, #03a9f4, #4fff03);
+    width: 100vw;
+  }
+  100%{
+    background: linear-gradient(200deg, #4fff03, #03a9f4);
+    width:0vw;
+  } 
+}
+.bottom{
+  height: 2.5vh;
+  bottom: 0;
+  width: 0vw;
+  position: absolute;
+  animation: animate5 10s infinite;
+  /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
+  /* border:1px solid black; */
+}
+@keyframes animate5 { 
+  0% { 
+    background: linear-gradient(200deg, #03a9f4, #4fff03);
+    width: 0vw;
+  }   
+  50% { 
+    background: linear-gradient(200deg, #4fff03 ,#03a9f4);
+    width: 100vw;
+  }
+  100%{
+    background: linear-gradient(200deg, #03a9f4, #4fff03);
+    width:0vw;
+  } 
+}
+
+.right{
+  right:0 ;
+  height: 0vh;
+  width: 2.5vh;
+  position: absolute;
+  animation: animate3 10s infinite;
+  z-index: 3;
+  /* background: linear-gradient(45deg, #ffd000, #5caa2f); */
+  /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
+  /* border:1px solid black; */
+}
+@keyframes animate3 { 
+  0% { 
+    background: linear-gradient(200deg, #4fff03, #03a9f4);
+    height: 0vh;
+  }   
+  50% { 
+    background: linear-gradient(200deg, #03a9f4 ,#4fff03);
+    height: 100vh;
+  }
+  100%{
+    background: linear-gradient(200deg, #4fff03, #03a9f4);
+    height:0vh;
+  }  
+}
+.left{
+  margin-right: 0;
+  height: 0vh;
+  width: 2.5vh;
+  position: absolute;
+  animation: animate4 10s infinite;
+  z-index: 3;
+  
+  /* background: linear-gradient(315deg, #03a9f4, #ff0058); */
+  /* border:1px solid black; */
+}
+@keyframes animate4 { 
+  0% { 
+    background: linear-gradient(200deg, #03a9f4, #4fff03);
+    height: 0vh;
+  }   
+  50% { 
+    height: 100vh;
+    background: linear-gradient(200deg, #4fff03,#03a9f4);
+  }
+  100%{
+    background: linear-gradient(200deg, #03a9f4, #4fff03);
+    height:0vh;
+  } 
+}
+
+@keyframes animate1 { 
+  0% { 
+  /* border: 1px solid #fff;  */
+  background: rgba(35, 114, 110, 0.788); 
+
+  transform: translateY(0); 
+  } 
+  25% { 
+  /* border: 1px solid #fff;  */
+  background: rgba(57, 175, 169, 0.603); 
+
+  transform: translateY(0); 
+  }
+  50% { 
+  /* border: 1px solid #fff;  */
+  background: rgba(67, 219, 212, 0.6); 
+
+  transform: translateY(0); 
+  } 
+  75% { 
+  /* border: 1px solid #fff;  */
+  background: rgba(49, 165, 159, 0.452); 
+
+  transform: translateY(0); 
+  } 
+  100% { 
+  background: rgba(35, 114, 110, 0.788);
+
+  transform: translateY(0); 
+  } 
+} 
+
+.section-1 .sheet-1 {
+  min-height: 568px;
+}
+
+.section-1 .text-1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2;
+  margin: 60px 570px 0 0;
+}
+
+.section-1 .text-2 {
+  font-weight: 700;
+  font-size: 12.5rem;
+  margin: 48px 0 0 419px;
+}
+
+.section-1 .btn-1 {
+  background-image: none;
+  border-style: none none solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: -255px auto 60px 0;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .section-1 .sheet-1 {
+    min-height: 588px;
+  }
+
+  .section-1 .text-1 {
+    width: auto;
+    margin-right: 470px;
+  }
+
+  .section-1 .text-2 {
+    width: auto;
+    margin-top: 0;
+    margin-left: 219px;
+  }
+
+  .section-1 .btn-1 {
+    margin-top: -207px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-1 .sheet-1 {
+    min-height: 568px;
+  }
+
+  .section-1 .text-1 {
+    margin-right: 250px;
+  }
+
+  .section-1 .text-2 {
+    font-size: 9.375rem;
+    margin-top: 60px;
+    margin-left: 237px;
+  }
+
+  .section-1 .btn-1 {
+    margin-top: -216px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-1 .text-1 {
+    margin-right: 70px;
+  }
+
+  .section-1 .text-2 {
+    margin-left: 57px;
+  }
+
+  .section-1 .btn-1 {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 57px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-1 .sheet-1 {
+    min-height: 647px;
+  }
+
+  .section-1 .text-1 {
+    margin-right: 0;
+  }
+
+  .section-1 .text-2 {
+    font-size: 6rem;
+    margin-top: 92px;
+    margin-left: 0;
+  }
+
+  .section-1 .btn-1 {
+    margin-top: -187px;
+    margin-bottom: -160px;
+    margin-left: 0;
+  }
+}

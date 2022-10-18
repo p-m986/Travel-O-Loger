@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgba(35, 114, 110, 0.2);
+}
+.BlurWholePage{
+    position: absolute;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(255, 255, 255, 0.814);
+    filter: blur(10);
+    z-index: 20;
+    display:none;
+}
+.favDisplay{
+    position: absolute;
+    height:80vh;
+    width:80vw;
+    top:9.5vh;
+    left:9.5vw;
+    z-index:21;
+    background-color: rgba(0, 0, 0, 0.34);
+    color:white;
+    padding:1vh;
+    border:1px solid white;
+    display:none;
+    overflow: scroll;
+}
+.favDisplay div .favbox{
+    height:20vh;
+    width:40vw;
+    top:10%;
+    position: relative;
+    display: inline-block;
+}
+.favDisplay div .favbox img{
+    height:30vh;
+    width:40vw;
+}
+.favDisplay div .favname{
+    height:10vh;
+    width:20vw;
+    top:10%;
+    font-size:250%;
+    color:white;
+    display: inline-block;
+}
+.leftDiv,.rightDiv{
+    height:100vh;
+    float: left;
+}
+.leftDiv{
+    border-right: 1px solid black;
+    width:65.8vw;
+}
+.leftDiv .backdrop {
+    position: absolute;
+    opacity: 0.9;
+    /* background-image: url('/Pictures/Cover\ Page/3.jpg'); */
+    background-image: url("./Pictures/CoverPage/3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:white;
+    width: 65.8vw;
+    height: 100vh;  
+    z-index:-2;
+}
+.animateBordertop{
+    animation: animate1 2.5s infinite;
+    /* box-shadow: ; */
+    background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+}
+@keyframes animate1 { 
+    0% { 
+        width:0%;
+    }   
+    100%{
+        width:100%
+    } 
+}
+.leftDiv h1{
+    position:absolute;
+    top: 55%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 5vw;
+    letter-spacing: 0.5vh;
+    z-index:4;
+}
+.leftDiv .navBar{
+    width:100%;
+    height:15vh;
+    margin-top: 2vh;
+    overflow: hidden;
+}
+.leftDiv .navBar *{
+    float: left;
+}
+.leftDiv .navBar .list{
+    display: inline-block;
+    margin-top:calc(3vw - 3vh);
+}
+.leftDiv .navBar ul li{
+    font-size: calc(3vw - 3vh);
+    color:white;
+    margin-left: 5vw;
+    list-style-type: none;
+}
+.leftDiv .navBar ul li a{
+    text-decoration: none;
+    color:white;
+    /* color: linear-gradient(white, rgb(179, 177, 177)); */
+}
+/* background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%); */
+.leftDiv .navBar ul li:hover a{
+    /* box-shadow: 0px 10px 10px 15px currentcolor; */
+    box-shadow:
+       inset -3em 3em rgba(0,0,0,0.1);
+             
+             /* 0.3em 0.3em 1em linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%); */
+    color: linear-gradient(white, rgb(179, 177, 177));
+}
+.leftDiv .navBar .logo {
+    width: 10vw;
+    height: 13vh;
+    background-image: url('logo.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.leftDiv .infoArea{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 40px;
+    border: 1px solid black;
+    height:70%;
+    width:80%;
+    /* padding:4%; */
+    margin-top: 3%;
+    margin-left: 10%;
+    /* display: none; */
+}
+.leftDiv .infoArea span{
+    position:absolute;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.34);
+    border-radius: 40px;   
+    margin: 5px;
+    height:91.7%;
+    width:94.7%;
+    z-index: 3;
+    color:white;
+    /* font-size:2vw; */
+    padding: 1vw;
+    word-spacing: 1vh;
+    line-height: 4vh;
+    /* display: none; */
+}
+
+/* Right Div */
+
+.rightDiv{
+    width: 33vw;
+    background-color: rgba(35, 114, 110, 0.6);
+    z-index:2;
+}
+.rightDiv .pageHeading {
+    display:block;
+    margin-top:11vh;
+    color:white;
+    font-size: 8vh;
+    z-index: 1;
+    opacity: 0.4;
+  }
+  
+.rightDiv input[type=text] {
+    padding: 6px;
+    margin-top:calc(3vw - 1vh);
+    margin-left:2vw;
+    background: #ccc;
+    font-size: 17px;
+    border: none;
+    border-radius: 13px;
+    opacity: 0.8;
+  }
+  
+.rightDiv .searchBar input:hover {
+    background: rgb(255, 255, 255);
+    opacity: 1;
+  }
+.rightDiv .searchBar .login{
+    margin-top:calc(3vw - 1vh);
+    margin-right: 15px;
+    border-radius: 40px;
+    font-size: 19   px;
+    padding: 7px 16px;  
+    height: 3vh;
+    width: 3vw;
+    float:right;
+    background: #ccc;
+    opacity:0.8;
+    color: black;
+}
+.rightDiv .searchBar .login a{
+    color:black;
+    text-decoration: none;
+}
+.rightDiv .searchBar .login a:active{
+    text-decoration: none;
+}
+.rightDiv .searchBar .login:hover{
+    background: rgb(255, 255, 255);
+    opacity: 1;
+}
+.rightDiv .horizontalScroll{
+      position: relative;
+      margin-top: 5vh;
+      height:64vh;
+      overflow:hidden;
+  }
+.rightDiv .horizontalScroll .boxes{
+    position: absolute;
+    display: inline-block;
+    margin-top: 3vh;
+    margin-left: 5%;
+    height:45vh;
+    width:90%;
+    border:1px solid white;  
+}
+.NameUpdate{
+    color: rgb(255, 255, 255);
+    font-size:4vh;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: -3;
+    position: absolute;
+}
+.rightDiv .horizontalScroll .boxes .Name{
+    color: rgb(255, 255, 255);
+    font-size:4vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -3;
+    position: absolute;
+}
+.rightDiv .horizontalScroll .boxes:hover .Name{
+    opacity: 1;
+    z-index: 3;
+}
+#box4,#box2,#box3,#box5{
+    display: none;
+}
+#box1 .pic{
+    height:100%;
+    width:100%;
+    background-image: url(./Pictures/Locations/Majuli-Assam.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+#box2 .pic{
+    height:100%;
+    width:100%;
+    background-image: url(./Pictures/Locations/Key-Monastery-Spiti.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+#box3 .pic{
+    height:100%;
+    width:100%;
+    background-image: url(./Pictures/Locations/Hampi-Karnataka.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+#box4 .pic{
+    height:100%;
+    width:100%;
+    background-image: url(./Pictures/Locations/Nohkalikai-Waterfalls-Cherrapunjee.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+#box5 .pic{
+    height:100%;
+    width:100%;
+    background-image: url(./Pictures/Locations/Pangong-Lake-Ladakh.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.rightDiv .horizontalScroll .boxes span{
+    background: white;
+    height:100%;
+    width:100%;
+    opacity: 0.3;
+    z-index: -4;
+    position: absolute;
+}
+.rightDiv .horizontalScroll .boxes .favbtn{
+    position:absolute;
+    top:10px;
+    left:90%;
+    font-size: 2vw;
+    z-index: 10;
+    display:none;
+}
+.rightDiv .horizontalScroll .boxes:hover .favbtn{
+    display:block;
+}
+.rightDiv .horizontalScroll .boxes:hover .favbtn .fa{
+    color:white;
+
+}
+.rightDiv .horizontalScroll .boxes:hover span{
+    z-index: 2;
+}
+.rightDiv .leftRight div{
+    display: inline-block;
+    border: 2px dotted rgb(182, 245, 213);
+    padding: 0.5vw;
+    margin-top: 50vh;
+}
+.rightDiv .leftRight div:hover{
+    border: 2px solid rgb(182, 245, 213);
+}
+.rightDiv .leftRight i{
+    color:white;
+    font-size:30px;
+}
+/* .rightDiv .backdrop2 {
+    position: absolute;
+    opacity: 0.6;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    background-image: url('/Pictures/Cover\ Page/RightDivBackdrop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 38vw;
+    height: 50vh;  
+    z-index:-2;
+} */
